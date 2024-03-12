@@ -15,17 +15,7 @@ import ua.edu.lntu.lab02_ipz_41_liskovchuk_serhii.ui.theme.Lab02_IPZ_41_Liskovch
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            Lab02_IPZ_41_Liskovchuk_serhiiTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }
+        setContentView(R.layout.activity_main) // Вказуємо макет для активності
     }
 }
 
